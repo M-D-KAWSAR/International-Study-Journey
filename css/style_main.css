@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:white;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background: #a36464;
+    border-radius: 10px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #444;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.dropdown li {
+    width: 200px;
+}
+
+.dropdown a {
+    padding: 10px 20px;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.cover {
+    width: 100%;
+    height: 35em;
+    text-align: center;
+    /* background-image: url('../picture/sectionOne/cover.jpg'); */
+    background-color: #eed8d8;
+    background-size: cover; 
+    background-position: center;
+    color: rgb(7, 2, 2);
+ 
+}
+
+.hero{
+    display: flex;               
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center;         
+    margin-top: 30px;       
+}
+
+.cta{
+    background: #fff;
+    color: #007BFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px; 
+}
+
+/* same gride section for flex display/................ */
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.25em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+} 
+
+
+.hero_two{
+    width: 100%;
+    margin-top: 1em;
+    background-color:white;
+    
+}
+.hero_Two_txt{
+    margin-top: 5em;
+    margin-bottom: 5em;
+    width: 100%;
+    color: black;
+    font-size: medium;
+    text-align: center;
+}
+.hero_Two_txt:hover{
+    margin-top: 5em;
+    margin-bottom: 5em;
+    width: 100%;
+    color: black;
+    font-size: medium;
+    text-align: center;
+    text-decoration: underline;
+}
+.hero_Two_images{
+    display: flex;                 
+    flex-wrap: wrap;        
+    justify-content: center;
+    
+}
+.resize-image{
+   width: 400px;
+   height: 400px;
+   padding: 20px;
+   box-shadow: 4 4px 8px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+}
+.resize-image:hover{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+ }
+
+.hero_three{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;                 
+    flex-wrap: wrap;        
+    justify-content: space-evenly;
+}
+.sections{
+    width: 40%;
+    height: 400px;
+    margin-top: 10px;
+    background-color: white;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 4 4px 8px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+}
+
+.section_txt{
+    display: grid;                 
+    place-items: center;           
+    height: 300px;              
+    border: 1px solid #ccc;
+    border: 10px;
+}
+
+.resize-image_recent{
+    width: 500px;
+    height: 250px;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 2px solid red;
+    box-shadow: 4 4px 8px rgba(207, 34, 34, 0.2);
+    border-radius: 5px;
+}
+
+
+.visa_process{
+    width: 100%;
+    display: flex;                 
+    flex-wrap: wrap;        
+    justify-content: space-evenly;
+}
+.visa_pic{
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    margin-top: 10px;
+    background-color:rgb(11, 8, 8);
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+
+}
+.footer h3{
+    color: white;
+}
+.footer h2{
+    color: white;
+}
+.footer-content{
+    display: flex;                 
+    flex-wrap: wrap;        
+    justify-content: space-evenly;
+}
+.footer-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h2 {
+    font-family: cursive;
+    font-size: 24px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #eed8d8;
+    text-decoration: none;
+
+}
+
+.footer-section ul li a:hover {
+    color: #e02323;
+}
+
+.footer-section.subscribe form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section.subscribe input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.footer-section.subscribe button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-section.subscribe button:hover {
+    background-color: #0056b3;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+
+.closer{
+    width: 100%;
+    height: auto;
+}
+.closer h3{
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none; /* Hide by default */
+    /* /* }
+
+    .nav-links.active {
+        display: flex; /* Show on toggle */
+    /* }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 15px;
+        color: white;
+    }
+} */  */
