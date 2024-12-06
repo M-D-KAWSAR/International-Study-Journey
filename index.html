@@ -4,60 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>International Study Journey</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style_main.css">
+
+
+
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="Programs.html">Programs Finder</a>
-                    <ul class="dropdown">
-                        <li><a href="Programs.html">Program information</a></li>
-                        <li><a href="Programs.html">Application Process</a></li>
-                        <li><a href="Programs.html">Financial Management</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">International Study Journey</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- Home Button -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!-- Button 1 with Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs Finder
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" href="#">Programs Information</a></li>
+                                <li><a class="dropdown-item" href="#">Application Process</a></li>
+                                <li><a class="dropdown-item" href="#">Financial Managment</a></li>
+                                <li><a class="dropdown-item" href="#">Comming Soon</a></li>
+                            </ul>
+                        </li>
+                        <!-- Button 2 with Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Visa Information
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="#">Document Check_list</a></li>
+                                <li><a class="dropdown-item" href="#">Application Process</a></li>
+                                <li><a class="dropdown-item" href="#">Pre-Departue Preparation</a></li>
+                                <li><a class="dropdown-item" href="#">Comming Soon</a></li>
+                            </ul>
+                        </li>
+                        <!-- Button 3 with Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Language Assistance
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <li><a class="dropdown-item" href="#">IELTS</a></li>
+                                <li><a class="dropdown-item" href="#">PTE</a></li>
+                                <li><a class="dropdown-item" href="#">TOEFL</a></li>
+                                <li><a class="dropdown-item" href="#">Comming Soon</a></li>
+                            </ul>
+                        </li>
+                        <!-- Button 4 with Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Local Needs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                <li><a class="dropdown-item" href="#">Local Transportation </a></li>
+                                <li><a class="dropdown-item" href="#">Insurances</a></li>
+                                
+                            </ul>
+                        </li>
+                        <!-- Contact Button -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    <a href="visa.html">Visa Information</a>
-                    <ul class="dropdown">
-                        <li><a href="visa.html">Document Check-list</a></li>
-                        <li><a href="visa.html">Application Process</a></li>
-                        <li><a href="visa.html">Pre-Departure Preparation</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="language.html">Language Assistance </a>
-                    <ul class="dropdown">
-                        <li><a href="language.html">IELTS</a></li>
-                        <li><a href="language.html">PTE</a></li>
-                        <li><a href="language.html">TOEFL</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="local.html">Local Needs</a>
-                    <ul class="dropdown">
-                        <li><a href="local.html">Local Transportation</a></li>
-                        <li><a href="local.html">Insurances</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                    
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <div class="hero hero_txt cover">
-            
-               <h1>Welcome to International Study Journey</h1>
-               <p>Your success starts here.</p>
-               <a href="#" class="cta">Get Started</a>
-            
+    <main>   
+        <div id="carouselExampleIndicators" class="carousel slide slide_pic" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="picture/sectionTwo/pic4.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="picture/sectionOne/cover.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="picture/sectionOne/cover2.jpg" alt="Third slide">
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
+
+
+              <div class="hero hero_txt cover">
+            
+                <h1>Welcome to International Study Journey</h1>
+                <p>Your success starts here.</p>
+                <a href="get_start.html" class="cta">Get Started</a>
+             
+         </div>
+ 
 
 
         <div class="container">
@@ -117,42 +179,59 @@
             </div>
             
         </div>
-        <h1 class="hero_Two_txt">Recent Popular Events </h1>
-        <div class="hero_three events">
-            <div class="sections">
-                <div class="section_txt">
-                    <img src="./picture/recent/recent.jpg" alt="Recent Updates"class="resize-image_recent" />
-                    <a href="#"><h2>Stanford University</h2></a>
-                    Location: Stanford, California, USA
-                    <p>Notable Fields: Business, Law, Medicine, Engineering</p>
+        <h1 class="hero_Two_txt">Recent Popular Events</h1>
+        <div class="container py-4">
+            <div class="row g-4">
+                <!-- Stanford University -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./picture/recent/recent.jpg" class="card-img-top" alt="Stanford University">
+                        <div class="card-body">
+                            <a href="#"><h5 class="card-title">Stanford University</h5></a>
+                            <p class="card-text"><strong>Location:</strong> Stanford, California, USA</p>
+                            <p class="card-text"><strong>Notable Fields:</strong> Business, Law, Medicine, Engineering</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- California Institute of Technology -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./picture/recent/california.jpg" class="card-img-top" alt="California Institute of Technology">
+                        <div class="card-body">
+                            <a href="#"><h5 class="card-title">California Institute of Technology (Caltech)</h5></a>
+                            <p class="card-text"><strong>Location:</strong> Pasadena, California, USA</p>
+                            <p class="card-text"><strong>Notable Fields:</strong> Physics, Chemistry, Engineering, Biology</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- University of Oxford -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./picture/recent/habard.jpg" class="card-img-top" alt="University of Oxford">
+                        <div class="card-body">
+                            <a href="#"><h5 class="card-title">University of Oxford</h5></a>
+                            <p class="card-text"><strong>Location:</strong> Oxford, England, UK</p>
+                            <p class="card-text"><strong>Notable Fields:</strong> Humanities, Sciences, Social Sciences, Medicine</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Harvard University -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./picture/recent/harvad.jpeg" class="card-img-top" alt="Harvard University">
+                        <div class="card-body">
+                            <a href="#"><h5 class="card-title">Harvard University</h5></a>
+                            <p class="card-text"><strong>Location:</strong> Cambridge, Massachusetts, USA</p>
+                            <p class="card-text"><strong>Notable Fields:</strong> Law, Business, Medicine, Political Science</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="sections">
-                <div class="section_txt">
-                    <img src="./picture/recent/california.jpg" alt="Recent Updates"class="resize-image_recent" />
-                    <a href="#"><h2>California Institute of Technology (Caltech)</h2></a>
-                    Location: Pasadena, California, USA
-                    <p>Notable Fields: Physics, Chemistry, Engineering, Biology</p>
-                </div>
-            </div>
-            <div class="sections">
-                <div class="section_txt">
-                    <img src="./picture/recent/habard.jpg" alt="Recent Updates"class="resize-image_recent" />
-                    <a href="#"><h2> University of Oxford</h2></a>
-                    Location: Oxford, England, UK
-                    <p>Notable Fields: Humanities, Sciences, Social Sciences, Medicine</p>
-                </div>
-            </div>
-            <div class="sections">
-                <div class="section_txt">
-                    <img src="./picture/recent/harvad.jpeg" alt="Recent Updates"class="resize-image_recent" />
-                    <a href="#"><h2>Harvard University </h2></a>
-                    Location: Cambridge, Massachusetts, USA
-                    <p>Notable Fields: Law, Business, Medicine, Political Science</p>
-                </div>
-            </div>
-
         </div>
+        
         <h1 class="hero_Two_txt">Some Of easy Visa Proccess</h1>
         <div class="visa_process">
             <div class="visa_picture">
@@ -162,46 +241,61 @@
             
                 <h1>Welcome to International Study Journey</h1>
                 <p>For More Information Visite ...</p>
-                <a href="#" class="cta">Get Started</a>
+                <a href="get_start.html" class="cta">Get Started</a>
              
          </div>
         </div>
     </main>
-    <footer class="footer closer">
-        <div class="footer-content">
-            <div class="footer-section logo">
-                <h2>International Study Journey</h2>
-            </div>
-            <div class="footer-section quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Program Details</a></li>
-                    <li><a href="#">Facilities</a></li>
-                </ul>
-            </div>
-            <div class="footer-section explore">
-                <h3>Explore</h3>
-                <ul>
-                    <li><a href="#">Student Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section programs">
-                <h3>Programs</h3>
-                <ul>
-                    <li><a href="#">Study Abroad Program</a></li>
-                </ul>
-            </div>
-            <div class="footer-section subscribe">
-                <h3>Subscribe to Updates</h3>
-                <p>Stay informed about our latest news and updates on the Study Abroad Program.</p>
-                <form action="#" method="post">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section -->
+                <div class="col-md-3 mb-4">
+                    <h2 class="footer-logo">International Study Journey</h2>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-md-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Program Details</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Facilities</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Explore -->
+                <div class="col-md-2 mb-4">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Student Testimonials</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Programs -->
+                <div class="col-md-2 mb-4">
+                    <h5>Programs</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Study Abroad Program</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Subscribe Section -->
+                <div class="col-md-3">
+                    <h5>Subscribe to Updates</h5>
+                    <p>Stay informed about our latest news and updates on the Study Abroad Program.</p>
+                    <form action="#" method="post" class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
+    
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

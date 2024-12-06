@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="/css/get.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Please Give Your Information</h1>
+        <form id="studentForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="contact">Mobile Number or Email:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="study">Current/Recent Study:</label>
+            <input type="text" id="study" name="study" required>
+
+            <div class="dropdown">
+                <input type="text" id="educationLevel" name="educationLevel" placeholder="Select education level" readonly>
+                <div class="dropdown-options">
+                    <div class="option" onclick="selectOption('SSC')">SSC</div>
+                    <div class="option" onclick="selectOption('HSC')">HSC</div>
+                    <div class="option" onclick="selectOption('BSc')">BSc</div>
+                    <div class="option" onclick="selectOption('MSc')">MSc</div>
+                </div>
+            </div>
+            
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="output" class="output"></div>
+    </div>
+    <script src="/Js/script.js"></script>
+</body>
+</html>

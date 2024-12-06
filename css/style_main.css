@@ -8,56 +8,29 @@ body {
     background-color:white;
 }
 
-header {
-    background: #333;
-    color: white;
-    padding: 10px 20px;
+
+
+.navbar {
+    background-color: #007bff; /* Navbar background color */
+    padding: 1rem;
+    width: 100%; /* Optional width for a more compact look */
+}
+.nav-link, .dropdown-item {
+    color: white !important; /* Set link color to white */
+}
+.dropdown-menu {
+    background-color: #0056b3; /* Dropdown background color */
+}
+.dropdown-item:hover {
+    background-color: #004085; /* Hover effect for dropdown items */
+    color: #fff !important;
+}
+/* Adjust vertical position */
+.navbar-container {
+    margin-top: 100px; /* Adjust this value to move the navbar up or down */
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.nav-links li {
-    position: relative;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-}
-
-.nav-links a:hover {
-    background: #a36464;
-    border-radius: 10px;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    background: #444;
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    z-index: 1;
-}
-
-.dropdown li {
-    width: 200px;
-}
-
-.dropdown a {
-    padding: 10px 20px;
-}
-
-.nav-links li:hover .dropdown {
-    display: block;
-}
 
 .cover {
     width: 100%;
