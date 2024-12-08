@@ -10,72 +10,54 @@ body {
 }
 
 
-header {
-    background: #333;
-    color: white;
+.navbar {
+    background-color: #007bff; /* Navbar background color */
+    padding: 1rem;
+    width: 100%; /* Optional width for a more compact look */
+}
+.nav-link, .dropdown-item {
+    color: white !important; /* Set link color to white */
+}
+.dropdown-menu {
+    background-color: #0056b3; /* Dropdown background color */
+}
+.dropdown-item:hover {
+    background-color: #004085; /* Hover effect for dropdown items */
+    color: #fff !important;
+}
+/* Adjust vertical position */
+.navbar-container {
+    margin-top: 100px; /* Adjust this value to move the navbar up or down */
+}
+
+span{
+    color: #e02323;
+    
+}
+
+.custom-btn {
+    background-color: #dc3545; /* Initial background color */
+    color: white; /* Initial font color */
+    border: none;
+    border-radius: 25px;
     padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
-
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.nav-links li {
-    position: relative;
-}
-
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-}
-
-
-.nav-links a:hover {
-    background: #a36464;
-    border-radius: 10px;
-}
-
-
-.dropdown {
-    display: none;
-    position: absolute;
-    background: #444;
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    z-index: 1;
-}
-
-
-.dropdown li {
-    width: 200px;
-}
-
-
-.dropdown a {
-    padding: 10px 20px;
-}
-
-
-.nav-links li:hover .dropdown {
-    display: block;
+.custom-btn:hover {
+    background-color: white; /* Background changes to white */
+    color: black; /* Font changes to black */
 }
 
 /* cover section css/ */
 
 .cover {
     width: 100%;
-    height: 35em;
+    height: 15em;
     text-align: center;
-    /* background-image: url('../picture/sectionOne/cover.jpg'); */
+    background-image: url('../picture/sectionOne/cover.jpg');
     background-color: #09d654;
     background-size: cover; 
     background-position: center;
@@ -88,7 +70,8 @@ header {
     flex-direction: column;      
     justify-content: center;     
     align-items: center;         
-    margin-top: 30px;       
+    margin-top: 30px;   
+    color: rgb(37, 9, 173);    
 }
 
 .cta{

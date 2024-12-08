@@ -4,99 +4,351 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/visa.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="Programs.html">Programs Finder</a>
-                    <ul class="dropdown">
-                        <li><a href="Programs.html">Program information</a></li>
-                        <li><a href="Programs.html">Application Process</a></li>
-                        <li><a href="Programs.html">Financial Management</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">International Study Journey</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- Home Button -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!-- Button 1 with Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs Finder
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" href="Programs.html">Programs Information</a></li>
+                                <li><a class="dropdown-item" href="application.html">Application Process</a></li>
+                                <li><a class="dropdown-item" href="financial.html">Financial Managment</a></li>
+                                <li><a class="dropdown-item" href="#">Comming Soon</a></li>
+                            </ul>
+                        </li>
+                        <!-- Button 2 with Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Visa Information
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="visa.html">Document Check_list</a></li>
+                                <li><a class="dropdown-item" href="application.html">Application Process</a></li>
+                                <li><a class="dropdown-item" href="#">Pre-Departue Preparation</a></li>
+                                <li><a class="dropdown-item" href="#">Comming Soon</a></li>
+                            </ul>
+                        </li>
+                        <!-- Button 3 with Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Language Assistance
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <li><a class="dropdown-item" href="#">IELTS</a></li>
+                                <li><a class="dropdown-item" href="#">PTE</a></li>
+                                <li><a class="dropdown-item" href="#">TOEFL</a></li>
+                                <li><a class="dropdown-item" href="#">Comming Soon</a></li>
+                            </ul>
+                        </li>
+                        <!-- Button 4 with Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Local Needs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                <li><a class="dropdown-item" href="local.html">Local Transportation </a></li>
+                                <li><a class="dropdown-item" href="#">Insurances</a></li>
+                                
+                            </ul>
+                        </li>
+                        <!-- Contact Button -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    <a href="#">Visa Information</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Document Check-list</a></li>
-                        <li><a href="#">Application Process</a></li>
-                        <li><a href="#">Pre-Departure Preparation</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Language Assistance </a>
-                    <ul class="dropdown">
-                        <li><a href="#">IELTS</a></li>
-                        <li><a href="#">PTE</a></li>
-                        <li><a href="#">TOEFL</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Local Needs</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Local Transportation</a></li>
-                        <li><a href="#">Insurances</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                   
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <!-- cover section........................  -->
-
     <div class="hero hero_txt cover">
             
-        <h1>Welcome to Prime Resourse of Scolar</h1>
+        <h1>VISA_ASSISTANCE</h1>
         <p>Your success starts here.</p>
-        <a href="#" class="cta">Get Started</a>
+        <a href="get_start.html" type="button" class="cta btn btn-outline-primary">Join Us Now!</a>
      
- </div>
+        </div>
 
-            <!-- foters section/....... -->
-    <footer class="footer closer">
-        <div class="footer-content">
-            <div class="footer-section logo">
-                <h2>Prime Resourse of Scolar</h2>
-            </div>
-            <div class="footer-section quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Program Details</a></li>
-                    <li><a href="#">Facilities</a></li>
-                </ul>
-            </div>
-            <div class="footer-section explore">
-                <h3>Explore</h3>
-                <ul>
-                    <li><a href="#">Student Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section programs">
-                <h3>Programs</h3>
-                <ul>
-                    <li><a href="#">Study Abroad Program</a></li>
-                </ul>
-            </div>
-            <div class="footer-section subscribe">
-                <h3>Subscribe to Updates</h3>
-                <p>Stay informed about our latest news and updates on the Study Abroad Program.</p>
-                <form action="#" method="post">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
+
+<!-- main............. -->
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h2 class="text-center fw-bold">What Does Getting a Visa Consultancy Service Is Important?</h2>
+            <p>
+                We all know that the visa procedure is the most important aspect of our travel formalities as travellers. Or student once a student has filed a visa application, he will always be in doubt until the embassy/consulate informs him of the status of the application.
+            </p>
+            <p>
+                This situation is nearly identical to how one feels when conducting an examination. What is the purpose of the test? Since you never know what will happen because embassy employees will determine whether or not to award a visa after studying the application.
+            </p>
+            <p>
+                And there's a risk your visa won't be approved because of a flaw in your application. As a result, one may seek the assistance of visa advisors, who have the necessary skills and can spot difficulties, ensuring that the procedure will be painless and straightforward.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h2 class="fw-bold">The Benefits of processing your visa with Success Finders</h2>
+            <p>
+                <span>Convenience</span><br>
+
+                The most primary part that Success Finders visa consultant plays in our process is that they do all of the tiresome manual work that an application would typically have to undertake themselves.
+
+                Filling the application foroms, compiling letters, scheduling appointments, paying fees at the bank / obtaining ads, filing an application, collecting passports, etc. We only need to gather our relevant documents according to the list they supplied, sign a few paperwork, and we're set to go.
+            </p>
+            <p>
+                <span class="spam_color">Expertise</span><br>
+
+                People can’t refuse that a visa specialist has more knowledge of the visa process than a traveller. Before starting the visa application process, it is necessary to have a deep knowledge of the process and the papers that will be required.
+
+                People spent a lot of time and money preparing our schedule, and now it's all arranged when we apply for the visa. It's essential to get guidance from an expert who knows whether or not any increments or cancellations are necessary for the application ahead of time. Likewise, they stay up to date on any legal changes. We save all of the time that would usually be spent studying links.
+            </p>
+            <p>
+                <br><span>Time Management</span><br>
+                Time management time is your most important asset, but many people are waste time. It is possible to take many days investigating visa procedures and documents. With so much confusion available online, it's easy to become puzzled, and a single blunder might result in your visa being denied. No question hiring a visa expert from Success Finders will save you a lot of time.
+
+                <br><br><span>Professional Assistance</span><br>
+                "Yes, you read it absolutely correct ." one of the most critical roles that Success Finder visa consultants perform for you is inside this. Whether you're a first-time student traveller or not, you all need that sense of security from someone we can rely on to get you through the process. 
+
+                Success Finders visa consultants have the skills to provide the assurance you want and handle all of the important details. We don't simply take your visas; we also offer advice on presenting your applications in the best possible light, increasing the chances of getting your visas accepted. If any last-minute changes occur, people search for help in serious situations when hiring a visa consultant since they may be required to give more papers or attend an interview at any moment.
+            </p>
+            <p class="highlight">
+                <h2 style="color: rgb(255, 0, 212);">Visa Application</h2><br>
+                The following are some of the most common criteria for application forms:
+            </p>
+            <ul>
+                <li>passport or travel document</li>
+                <li>visa letter from your UK education provider</li>
+                <li>bank statements to prove you have enough money to study and live in the UK</li>
+                <li>documents required by your UK education provider when they accepted you for the course</li>
+                <li>biometric details (photo and fingerprint scan).</li>
+            </ul>
+            <p>
+                You must submit your Visa application at the nearest British High Commission or Embassy in your home country. Your application, along with all the required documents and Visa fee, must be submitted to an Entry Clearance Officer (ECO) from the nearest visa issuing centre of the British High Commission or Embassy <br>
+<br>
+                The British High Commission or Embassy aims to make decisions on Visa applications within a certain time period specified, although this may take slightly longer during busy periods. It is therefore, important to apply as early as you can. <br>
+<br>
+                If an interview is required, then the application process will take longer and you are therefore advised to apply for your visa at least 1 month- or preferably earlier - before your Course commences. If your application is fully prepared, and accompanied by the compulsory and relevant documentary evidence of your circumstances, you may be issued a Visa without an interview. <br>
+<br>
+                If no interview is required, your passport will be returned to the application centre, or sent by courier to you, within two working days or you may be asked to collect. If however, you are called for an interview, you are likely to get an appointment for the next working day. This may change during exceptionally busy periods. <br>
+            </p> <br>
+            <div class="text-center mt-4">
+                <a href="#" class="custom-btn">Apply Now!</a>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h4 class="fw-bold">Types Of Student Visas</h4>
+           <span><p>Visa For Students</p></span>
+            <p class="highlight">
+                If your age is 16 or older and you want to study in the UK, you may apply for a student visa on the following points.
+            </p>
+            <ul>
+                <li>A certified student sponsor has given you a spot on a course.</li>
+                <li>Make sure you have enough money to support yourself and pay for your education - the cost may vary based on your situation.</li>
+                <li>Can communicate in English through speaking, reading, writing, and understanding it.</li> 
+            </ul>
+            <span><p>Student Visa (Family Members)</p></span>
+            <p class="highlight">
+                If your age is 16 or older and you want to study in the UK, you may apply for a student visa on the following points.
+            </p>
+            <ul>
+                <li>A certified student sponsor has given you a spot on a course.</li>
+                <li>Make sure you have enough money to support yourself and pay for your education - the cost may vary based on your situation.</li>
+                <li>Can communicate in English through speaking, reading, writing, and understanding it.</li>
+            </ul>
+            <span><p>Student Visa for Children</p></span>
+            <p class="highlight">
+                If your age is 16 or older and you want to study in the UK, you may apply for a student visa on the following points.
+            </p>
+            <ul>
+                <li>A certified student sponsor has given you a spot on a course.</li>
+                <li>Make sure you have enough money to support yourself and pay for your education - the cost may vary based on your situation.</li>
+                <li>Can communicate in English through speaking, reading, writing, and understanding it.</li>
+            </ul>
+            <br><span><p>Quick Studies</p></span>
+            <p>Students who desire to enrol in courses lasting up to six months or English language courses up to 11 months can apply for short-term student visas.</p>
+        </div>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h4 class="fw-bold">Question Regarding Working, On Student Visa</h4>
+            <p>While searching for a suitable study visa, many students question whether they can work in the UK while on a student visa?</p>
+            <p>
+                Well, the answer is yes. Many overseas students in the UK balance their education with part-time employment, work placement, or internship. The hours and sort of work students undertake will be determined by the type of visa they have and the university or college sponsoring them.
+            </p>
+            <div class="text-center mt-4">
+                <a href="#" class="custom-btn">Enquire Now!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion container my-5" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Application Handled By Us
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>After you submit your application, it takes a few weeks for it to be processed. Our advisers will contact you as soon as the results from the chosen university are received, or you may obtain the results through email..
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Acceptance Letter of Your Proposal
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            If your application is approved by the institution, you will get an offer letter and an acceptance document. It is best to thoroughly read and evaluate the offer letter before accepting it because it may contain terms and conditions.
+             
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Arrangement Of Health Insurance
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Policyholders who have purchased private health insurance can get treatment covered by this policy. Medical treatments, hospital bills, and ambulance fees are healthcare expenses covered by the hospital or supplementary cover for UK nationals.
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- the list of country where we are reached -->
+<div class="container my-5">
+    <h2 class="text-center fw-bold">Represented Universities</h2>
+    <p class="text-center mb-4">We’re proud to work with each of our represented universities, offering courses to prepare students for their future.</p>
+    <div class="row text-start">
+        <div class="col-md-3">
+            <p><span class="checkmark">✔</span>Cecos College London</p>
+            <p><span class="checkmark">✔</span>Arden University London</p>
+            <p><span class="checkmark">✔</span>Regent College London</p>
+            <p><span class="checkmark">✔</span>Scholars School System University College Centre</p>
+            <p><span class="checkmark">✔</span>Study Group</p>
+            <p><span class="checkmark">✔</span>Anglia Ruskin University (London)</p>
+            <p><span class="checkmark">✔</span>Ulster University</p>
+        </div>
+        <div class="col-md-3">
+            <p><span class="checkmark">✔</span>Bellerbys College</p>
+            <p><span class="checkmark">✔</span>University of Aberdeen</p>
+            <p><span class="checkmark">✔</span>Cardiff University</p>
+            <p><span class="checkmark">✔</span>Coventry University London</p>
+            <p><span class="checkmark">✔</span>Durham University</p>
+            <p><span class="checkmark">✔</span>Holland International Study Centre</p>
+            <p><span class="checkmark">✔</span>University of Huddersfield</p>
+        </div>
+        <div class="col-md-3">
+            <p><span class="checkmark">✔</span>University of Huddersfield London</p>
+            <p><span class="checkmark">✔</span>Kingston University, London</p>
+            <p><span class="checkmark">✔</span>Lancaster University</p>
+            <p><span class="checkmark">✔</span>University of Leeds</p>
+            <p><span class="checkmark">✔</span>Leeds Beckett University</p>
+            <p><span class="checkmark">✔</span>University of Lincoln</p>
+            <p><span class="checkmark">✔</span>Liverpool John Moores University</p>
+        </div>
+        <div class="col-md-3">
+            <p><span class="checkmark">✔</span>Royal Holloway, University of London</p>
+            <p><span class="checkmark">✔</span>The University of Sheffield</p>
+            <p><span class="checkmark">✔</span>University of Strathclyde</p>
+            <p><span class="checkmark">✔</span>University of Surrey</p>
+            <p><span class="checkmark">✔</span>University of Sussex</p>
+            <p><span class="checkmark">✔</span>University College Dublin</p>
+        </div>
+    </div>
+</div>
+
+
+
+            <!-- foters section/....... -->
+            <footer class="footer bg-dark text-white py-5">
+                <div class="container">
+                    <div class="row">
+                        <!-- Logo Section -->
+                        <div class="col-md-3 mb-4">
+                            <h2 class="footer-logo">International Study Journey</h2>
+                        </div>
+            
+                        <!-- Quick Links -->
+                        <div class="col-md-2 mb-4">
+                            <h5>Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Program Details</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Facilities</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Explore -->
+                        <div class="col-md-2 mb-4">
+                            <h5>Explore</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">Student Testimonials</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Programs -->
+                        <div class="col-md-2 mb-4">
+                            <h5>Programs</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">Study Abroad Program</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Subscribe Section -->
+                        <div class="col-md-3">
+                            <h5>Subscribe to Updates</h5>
+                            <p>Stay informed about our latest news and updates on the Study Abroad Program.</p>
+                            <form action="#" method="post" class="d-flex">
+                                <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>

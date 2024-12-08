@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">International Study Journey</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +31,9 @@
                                 Programs Finder
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                <li><a class="dropdown-item" href="#">Programs Information</a></li>
-                                <li><a class="dropdown-item" href="#">Application Process</a></li>
-                                <li><a class="dropdown-item" href="#">Financial Managment</a></li>
+                                <li><a class="dropdown-item" href="Programs.html">Programs Information</a></li>
+                                <li><a class="dropdown-item" href="application.html">Application Process</a></li>
+                                <li><a class="dropdown-item" href="financial.html">Financial Managment</a></li>
                                 <li><a class="dropdown-item" href="#">Comming Soon</a></li>
                             </ul>
                         </li>
@@ -43,8 +43,8 @@
                                 Visa Information
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <li><a class="dropdown-item" href="#">Document Check_list</a></li>
-                                <li><a class="dropdown-item" href="#">Application Process</a></li>
+                                <li><a class="dropdown-item" href="visa.html">Document Check_list</a></li>
+                                <li><a class="dropdown-item" href="application.html">Application Process</a></li>
                                 <li><a class="dropdown-item" href="#">Pre-Departue Preparation</a></li>
                                 <li><a class="dropdown-item" href="#">Comming Soon</a></li>
                             </ul>
@@ -67,7 +67,7 @@
                                 Local Needs
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                                <li><a class="dropdown-item" href="#">Local Transportation </a></li>
+                                <li><a class="dropdown-item" href="local.html">Local Transportation </a></li>
                                 <li><a class="dropdown-item" href="#">Insurances</a></li>
                                 
                             </ul>
@@ -112,13 +112,13 @@
 
 
 
-              <div class="hero hero_txt cover">
+               <div class="hero hero_txt cover">
             
                 <h1>Welcome to International Study Journey</h1>
                 <p>Your success starts here.</p>
                 <a href="get_start.html" class="cta">Get Started</a>
              
-         </div>
+                </div>
  
 
 
@@ -246,6 +246,42 @@
          </div>
         </div>
     </main>
+
+
+
+
+        <!-- Chatbot Floating Button -->
+
+
+
+        <div class="chatbot-button" onclick="toggleChat()">
+            <img src="picture/logo/bots2.png" alt="">
+        </div>
+    
+        <!-- Chat Window -->
+
+
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                Bot
+                <button onclick="toggleChat()">✖</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <!-- Bot messages -->
+                <div class="message bot-message">
+                    Hi there! How can I help you today?
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="userInput" placeholder="Type your message here...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    
+    
+    
+
+
     <footer class="footer bg-dark text-white py-5">
         <div class="container">
             <div class="row">
@@ -297,5 +333,6 @@
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main_nav.js"></script>
 </body>
 </html>
